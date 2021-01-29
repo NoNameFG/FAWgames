@@ -1,0 +1,86 @@
+.activation_description{
+  list-style-type: none;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  counter-reset: li;
+  color: #D9D9D9;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+.activation_description--elem{
+  margin: 15px;
+}
+
+.activation_description--elem a{
+  color: #0094E9;
+}
+
+.activation_description--elem span{
+}
+
+.activation_description--elem::before{
+  margin-right: 20px;
+  counter-increment: li;
+  content: counter(li);
+  font-size: 18px;
+  font-weight: bold;
+  color: #c9c9c9;
+}
+
+.activation_description--elem:hover::before{
+  color: #FF9000;
+}
+
+.activation_description--elem_img div{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.activation_page h3{
+  margin: 45px 25px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.battlenet_img{
+  width: 200px;
+}
+
+.origin_img{
+  width: 350px;
+}
+
+.uplay_img{
+  width: 250px;
+}
+
+.bethesdanet_img{
+  width: 200px;
+}
+
+.socialclub_img{
+  width: 250px;
+}
+
+/*Dark theme*/
+.dark_theme .activation_description{
+  color: #D9D9D9;
+}
+
+.dark_theme .activation_page h3{
+  color: #D9D9D9;
+}
+
+/*White theme*/
+.white_theme .activation_description{
+  color: black;
+}
+
+.white_theme .activation_page h3{
+  color: black;
+}

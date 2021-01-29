@@ -1,0 +1,88 @@
+.activation_wrapper{
+  margin-top: 128px;
+  max-width: 1020px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.activation_wrapper--template{
+  width: 100%;
+  border-radius: 6px;
+  display: flex;
+}
+
+.activation_wrapper--description{
+  margin: 30px 50px;
+  width: calc(100% - 184px);
+}
+
+.activation_distributor--list{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 84px;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 6px 0 0 6px;
+}
+
+.activation_distributor--instance_link{
+  width: 60px;
+  height: 60px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.activation_distributor--instance{
+  width: 84px;
+  height: 84px;
+  overflow: hidden;
+  border-radius: 6px 0 0 6px;
+}
+
+.activation_distributor--instance:first-child{
+  border-top-left-radius: 6px;
+}
+
+.activation_distributor--instance:last-child{
+  border-bottom-left-radius: 6px;
+}
+
+.activation_distributor--instance_link svg{
+  filter: drop-shadow(0 0 8px rgba(255,255,255, .6));
+  height: 60px;
+}
+
+.dark_theme .activation_wrapper--template{
+  background: #22272B;
+  border: 1px solid #393D41;
+}
+
+.dark_theme .activation_distributor--instance_link.active{
+  background: #22272B;
+}
+
+
+.dark_theme .activation_distributor--list{
+  background: #171C20;
+}
+
+.white_theme .activation_wrapper--template{
+    background: #fff;
+    border: 1px solid #E9E9E9;
+}
+
+.white_theme .activation_distributor--instance_link{
+  background: #F4F4F4;
+}
+
+
+.white_theme .activation_distributor--instance_link.active{
+  background: #fff;
+}
+
+.white_theme .activation_distributor--list{
+  background: #F4F4F4;
+}
